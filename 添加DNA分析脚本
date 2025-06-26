@@ -1,0 +1,7 @@
+# 计算DNA序列GC含量
+def gc_content(seq):
+    return (seq.count("G") + seq.count("C")) / len(seq) * 100
+
+# 测试示例
+dna = "ATGCGAT"
+print(f"序列 {dna} 的GC含量为: {gc_content(dna):.2f}%")
